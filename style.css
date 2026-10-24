@@ -8,6 +8,7 @@
 body{
     background-color: #fafafa;
 }
+
 header{
     display: flex;
     align-items: center;
@@ -84,7 +85,6 @@ header{
 .isi-pengantar {
     color: #fafafa;
     margin-top: 0;
-
 }
 
 .button{
@@ -136,11 +136,11 @@ header{
     border-radius: 10px;
     margin-top: 20px;
 }
+
 .paket-utama{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 250px 250px;
-    
 }
 
 .judul-paket{
@@ -175,12 +175,12 @@ header{
     margin: 10px;
     margin-bottom: 0;
 }
+
 .paket-utama p{
     color: grey;
     margin: 10px;
     margin-top: 0;
     font-size: 14px;
-    
 }
 
 .harga{
@@ -190,6 +190,7 @@ header{
     margin-right: 20px;
     margin-left: 0;
 }
+
 .harga p{
     color:#d32f2f;
     font-weight: bold;
@@ -236,4 +237,79 @@ header{
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    .judul {
+        margin-left: 0;
+    }
+    .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pesan-now {
+        margin-right: 0;
+        width: 100%;
+    }
+    .pengantar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .sub-pengantar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slogan {
+        width: 100%;
+        font-size: 12px;
+    }
+    .pengantar h2 {
+        font-size: 28px;
+    }
+    .button {
+        justify-content: center;
+    }
+    .pengantar img {
+        margin-top: 20px;
+    }
+    .untung {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .paket-utama {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    .jenis-paket {
+        margin: 0 15px;
+        height: auto;
+    }
+    .paket-utama img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover; 
+    }
+    .harga {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .promo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .klaim-promo {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
